@@ -1,5 +1,5 @@
 properties {
-    $script = "$PSScriptRoot\MITREAttackApi\MITREAttackApi.psm1"
+    $script = "$PSScriptRoot\MITREAttack\MITREAttack.psm1"
 }
   
 # Default task includes Analyzing and Testing of script
@@ -25,6 +25,6 @@ task Test {
   
 # Run a deployment script after appropriate tests are passed
 task Deploy -depends Analyze, Test {
-    Invoke-PSDeploy -Path '.\MITREAttackApi.psdeploy.ps1' -Force -Verbose:$VerbosePreference
+    Invoke-PSDeploy -Path '.\MITREAttack.psdeploy.ps1' -Force -Verbose:$VerbosePreference
 }
   

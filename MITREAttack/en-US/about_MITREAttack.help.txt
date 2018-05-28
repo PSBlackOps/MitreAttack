@@ -1,5 +1,5 @@
 TOPIC
-    about_MITREAttackApi
+    about_MITREAttack
     
 SHORT DESCRIPTION
     A short, one-line description of the topic contents.

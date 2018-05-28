@@ -1,7 +1,7 @@
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $root = Split-Path -Path $here -Parent
 
-$modulePath = Join-Path -Path $root -ChildPath \MITREAttackApi\
+$modulePath = Join-Path -Path $root -ChildPath \MITREAttack\
 $moduleName = (Get-Item -Path "$modulePath\*.psd1").BaseName
 $moduleManifest = Join-Path -Path $modulePath -ChildPath "$moduleName.psd1"
 $functionsPublicPath = Join-Path -Path $modulePath -ChildPath 'Public'
